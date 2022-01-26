@@ -1,0 +1,263 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.exit {
+  width: 300px;
+  height: 250px;
+  opacity: 0;
+  text-decoration: none;
+  border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: #fff;
+}
+
+.hide {
+  display: none;
+}
+
+#banner {
+  width: 300px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+
+[class^=scene] {
+  display: none;
+  width: 300px;
+  height: 250px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+[class^=scene] > div, [class^=scene] > img {
+  position: absolute;
+}
+
+.scene0 {
+  background-color: #da1710;
+}
+.scene0 .logo_w {
+  background-image: url(sprites.png);
+  background-position: -456px -267px;
+  width: 50px;
+  height: 20px;
+  top: 15px;
+  left: 28px;
+}
+.scene0 .purple_stripe {
+  width: 12px;
+  height: 250px;
+  position: absolute;
+  background: #ff3ddb;
+}
+.scene0 .copy_1 {
+  background-image: url(sprites.png);
+  background-position: 0px -323px;
+  width: 104px;
+  height: 100px;
+  left: 28px;
+  top: 60px;
+}
+.scene0 .copy_2 {
+  background-image: url(sprites.png);
+  background-position: 0px -218px;
+  width: 127px;
+  height: 100px;
+  left: 28px;
+  top: 60px;
+}
+.scene0 .machine {
+  right: 0;
+  position: absolute;
+  bottom: 0;
+}
+.scene0 .eftpos {
+  background-image: url(sprites.png);
+  background-position: -345px 0px;
+  width: 106px;
+  height: 138px;
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  z-index: 2;
+}
+.scene0 .money {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.scene0 .money .coin_04 {
+  background-image: url(sprites.png);
+  background-position: -456px -292px;
+  width: 31px;
+  height: 31px;
+  position: absolute;
+  transform-origin: center;
+  bottom: 250px;
+  right: 64px;
+}
+.scene0 .money .coin_06 {
+  background-image: url(sprites.png);
+  background-position: -485px -357px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  transform-origin: center;
+  bottom: 190px;
+  right: -30px;
+  z-index: 1;
+}
+.scene0 .money .coin_07 {
+  background-image: url(sprites.png);
+  background-position: -456px -357px;
+  width: 24px;
+  height: 25px;
+  position: absolute;
+  transform-origin: center;
+  bottom: 250px;
+  right: 140px;
+}
+.scene0 .money .coin_09 {
+  background-image: url(sprites.png);
+  background-position: -456px -328px;
+  width: 29px;
+  height: 24px;
+  position: absolute;
+  transform-origin: center;
+  bottom: 255px;
+  right: 40px;
+  z-index: 1;
+}
+.scene0 .money .note_02 {
+  background-image: url(sprites.png);
+  background-position: -274px -323px;
+  width: 75px;
+  height: 55px;
+  position: absolute;
+  transform-origin: center;
+  bottom: 190px;
+  right: -75px;
+  z-index: 1;
+}
+.scene0 .money .note_07 {
+  background-image: url(sprites.png);
+  background-position: -456px -78px;
+  width: 53px;
+  height: 59px;
+  position: absolute;
+  transform-origin: center;
+  bottom: 250px;
+  right: 86px;
+}
+.scene0 .money .note_09 {
+  background-image: url(sprites.png);
+  background-position: -456px -206px;
+  width: 53px;
+  height: 56px;
+  position: absolute;
+  transform-origin: center;
+  bottom: 250px;
+  right: 40px;
+}
+.scene0 .money .note_12 {
+  background-image: url(sprites.png);
+  background-position: -456px -142px;
+  width: 53px;
+  height: 59px;
+  position: absolute;
+  transform-origin: center;
+  bottom: 215px;
+  right: -60px;
+}
+.scene0 .money .note_13 {
+  background-image: url(sprites.png);
+  background-position: -456px 0px;
+  width: 53px;
+  height: 73px;
+  position: absolute;
+  transform-origin: center;
+  bottom: 140px;
+  right: -50px;
+}
+.scene0 .money .note_14 {
+  background-image: url(sprites.png);
+  background-position: -109px -323px;
+  width: 85px;
+  height: 85px;
+  position: absolute;
+  transform-origin: center;
+  bottom: 250px;
+  right: -20px;
+}
+.scene0 .money .note_15 {
+  background-image: url(sprites.png);
+  background-position: -199px -323px;
+  width: 70px;
+  height: 63px;
+  position: absolute;
+  transform-origin: center;
+  bottom: 245px;
+  right: 156px;
+}
+
+.scene1 {
+  z-index: 2;
+}
+.scene1 .cover {
+  background-color: #da1710;
+  width: 300px;
+  height: 250px;
+}
+.scene1 .purple_stripe {
+  width: 12px;
+  height: 250px;
+  background-color: #ff3ddb;
+}
+.scene1 .logo_w {
+  background-image: url(sprites.png);
+  background-position: -456px -267px;
+  width: 50px;
+  height: 20px;
+  top: 15px;
+  left: 28px;
+  z-index: 1;
+}
+.scene1 .copy_3 {
+  background-image: url(sprites.png);
+  background-position: -132px -218px;
+  width: 168px;
+  height: 64px;
+  left: 28px;
+  top: 70px;
+}
+.scene1 .cta {
+  background-image: url(sprites.png);
+  background-position: -305px -218px;
+  width: 135px;
+  height: 33px;
+  left: 28px;
+  top: 170px;
+}
+
+.chopper {
+  position: absolute;
+  top: -600px;
+  left: -850px;
+  z-index: 2;
+}
+
+/*# sourceMappingURL=styles.css.map */

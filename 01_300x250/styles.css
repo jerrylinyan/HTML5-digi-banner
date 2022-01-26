@@ -1,0 +1,415 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.exit {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+#banner {
+  width: 300px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+
+[class^=scene] {
+  display: none;
+  width: 300px;
+  height: 250px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+[class^=scene] > div, [class^=scene] > img {
+  position: absolute;
+}
+
+.bg {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  left: 0;
+  top: 0;
+  z-index: -100;
+}
+
+.purple-swiper {
+  width: 15px;
+  height: 250px;
+  position: absolute;
+  background: #991ad6;
+}
+
+.scene0 {
+  background: #da1710;
+}
+.scene0 .twelve {
+  background-image: url(sprites.png);
+  background-position: -234px -255px;
+  width: 161px;
+  height: 51px;
+  top: 50%;
+  left: 50%;
+  margin-top: -25.5px;
+  margin-left: -80.5px;
+}
+
+.scene1 {
+  background: #da1710;
+  overflow: hidden;
+}
+.scene1 .w-logo {
+  background-image: url(sprites.png);
+  background-position: -350px -202px;
+  width: 39px;
+  height: 17px;
+  top: 15px;
+  left: 33px;
+}
+.scene1 .gonuts {
+  background-image: url(sprites.png);
+  background-position: -305px -176px;
+  width: 120px;
+  height: 21px;
+  left: 88px;
+  top: 63px;
+  image-rendering: crisp-edges;
+}
+.scene1 .qantas {
+  background-image: url(sprites.png);
+  background-position: -305px -146px;
+  width: 143px;
+  height: 25px;
+  left: 76px;
+  top: 174px;
+  image-rendering: crisp-edges;
+}
+
+.scene1-cover {
+  background: #da1710;
+}
+
+.scene2 {
+  background-color: #ffd9f7;
+}
+.scene2 .r-logo {
+  background-image: url(sprites.png);
+  background-position: -305px -202px;
+  width: 40px;
+  height: 17px;
+  top: 15px;
+  left: 33px;
+}
+.scene2 .shine-wrap {
+  clip: rect(62px, 220px, 151px, 86px);
+}
+.scene2 .shine {
+  background-image: url(sprites.png);
+  background-position: 0px 0px;
+  width: 300px;
+  height: 250px;
+  top: 15px;
+  left: 33px;
+  opacity: 0.5;
+}
+.scene2 .card {
+  background-image: url(sprites.png);
+  background-position: -305px 0px;
+  width: 150px;
+  height: 104px;
+  left: 77px;
+  top: 60px;
+}
+.scene2 .withanew {
+  background-image: url(sprites.png);
+  background-position: 0px -354px;
+  width: 175px;
+  height: 38px;
+  left: 65px;
+  top: 175px;
+}
+
+.scene3-cover {
+  background-color: #da1710;
+}
+
+.scene3 .w-logo {
+  background-image: url(sprites.png);
+  background-position: -350px -202px;
+  width: 39px;
+  height: 17px;
+  top: 15px;
+  left: 33px;
+}
+.scene3 .earnup {
+  background-image: url(sprites.png);
+  background-position: 0px -255px;
+  width: 229px;
+  height: 53px;
+  top: 60px;
+  left: 35px;
+}
+.scene3 .minspend {
+  background-image: url(sprites.png);
+  background-position: 0px -313px;
+  width: 240px;
+  height: 36px;
+  left: 35px;
+  top: 195px;
+}
+.scene3 .findoutmorecta {
+  background-image: url(sprites.png);
+  background-position: -305px -109px;
+  width: 127px;
+  height: 32px;
+  left: 35px;
+  top: 145px;
+}
+
+.line-group {
+  position: absolute;
+}
+.line-group.one {
+  top: 90px;
+  left: 35px;
+}
+.line-group.two {
+  top: 105px;
+  left: 155px;
+}
+.line-group.two .purple-line {
+  left: -10px;
+}
+.line-group.two .pink-line {
+  left: 2px;
+  top: -10px;
+  animation: lines2 0.7s ease-in-out;
+  animation-iteration-count: infinite;
+}
+.line-group.two .db-line {
+  left: 18px;
+}
+.line-group.three {
+  top: 100px;
+  left: 198px;
+}
+.line-group.three .purple-line {
+  left: 18px;
+  top: -10px;
+}
+.line-group.three .pink-line {
+  left: -5px;
+  top: -2px;
+}
+.line-group.three .db-line {
+  left: 5px;
+  animation: lines2 0.7s ease-in-out;
+  animation-iteration-count: infinite;
+}
+.line-group.four {
+  top: 95px;
+  left: 245px;
+}
+.line-group.four .purple-line {
+  left: -5px;
+  top: -5px;
+}
+.line-group.four .pink-line {
+  left: 2px;
+  top: 0px;
+  animation: lines2 0.7s ease-in-out;
+  animation-iteration-count: infinite;
+}
+.line-group.four .db-line {
+  left: 12px;
+}
+.line-group > div {
+  position: absolute;
+  height: 8px;
+  width: 3px;
+}
+.line-group .purple-line {
+  background-color: #9700db;
+  animation: lines 0.7s ease-in-out;
+  animation-direction: reverse;
+  animation-iteration-count: infinite;
+}
+.line-group .pink-line {
+  background-color: #ff1fdd;
+  left: 8px;
+  top: 5px;
+  animation: lines 0.7s ease-in-out;
+  animation-iteration-count: infinite;
+}
+.line-group .db-line {
+  background-color: #171b24;
+  left: 14px;
+  top: -5px;
+  animation: lines 0.7s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+#d1 > * {
+  animation: floater 4s;
+  animation-iteration-count: 2;
+}
+
+#d2 > * {
+  animation: floater2 5s;
+  animation-iteration-count: 2;
+}
+
+#d3 > * {
+  animation: floater 4s;
+  animation-iteration-count: 2;
+}
+
+#d4 > * {
+  animation: floater2 5s;
+  animation-iteration-count: 2;
+}
+
+#d5 > * {
+  animation: floater 4s;
+  animation-iteration-count: 2;
+}
+
+#d6 > * {
+  animation: floater2 5s;
+  animation-iteration-count: 2;
+}
+
+@keyframes floater {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(1px, -3px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes floater2 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(-1px, 3px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes lines {
+  0% {
+    height: 8px;
+  }
+  35% {
+    height: 0px;
+  }
+  100% {
+    height: 12px;
+  }
+}
+@keyframes lines2 {
+  0% {
+    height: 0px;
+  }
+  50% {
+    height: 12px;
+  }
+  100% {
+    height: 0px;
+  }
+}
+.donut-container, .box-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.lid-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 0 60px;
+}
+
+.exit {
+  width: 300px;
+  height: 250px;
+  opacity: 0;
+  text-decoration: none;
+  border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+#banner:after {
+  content: "";
+  position: absolute;
+  width: 298px;
+  height: 248px;
+  border: 1px solid #cdcdcd;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 99;
+}
+
+.chopper {
+  left: -760px;
+  top: -415px;
+  width: 1920px;
+  height: 1080px;
+  position: absolute;
+}
+
+/*# sourceMappingURL=styles.css.map */

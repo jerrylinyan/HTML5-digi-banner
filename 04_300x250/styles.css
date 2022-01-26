@@ -1,0 +1,277 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.hide {
+  display: none;
+}
+
+#banner {
+  width: 300px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+
+[class^=scene] {
+  display: none;
+  width: 300px;
+  height: 250px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+[class^=scene] > div, [class^=scene] > img {
+  position: absolute;
+}
+
+.scene0 {
+  background-color: #e0baf2;
+}
+.scene0 .logo {
+  background-image: url(sprites.png);
+  background-position: -917px -208px;
+  width: 50px;
+  height: 20px;
+  top: 20px;
+  left: 30px;
+}
+.scene0 .purple_stripe {
+  width: 11px;
+  height: 250px;
+  position: absolute;
+  background: #9719d7;
+}
+.scene0 .wind_line {
+  background-image: url(sprites.png);
+  background-position: 0px 0px;
+  width: 1000px;
+  height: 130px;
+  top: 13px;
+  right: 0;
+}
+.scene0 .title_1 {
+  background-image: url(sprites.png);
+  background-position: -475px -208px;
+  width: 171px;
+  height: 48px;
+  top: 52px;
+  left: 62px;
+  transform-origin: center;
+}
+.scene0 .title_2 {
+  background-image: url(sprites.png);
+  background-position: -610px -181px;
+  width: 87px;
+  height: 21px;
+  top: 79px;
+  left: 146px;
+  transform-origin: center;
+}
+.scene0 .grass {
+  background-image: url(sprites.png);
+  background-position: -305px -135px;
+  width: 300px;
+  height: 68px;
+  bottom: 0;
+  left: 0;
+}
+.scene0 .house {
+  background-image: url(sprites.png);
+  background-position: -305px -208px;
+  width: 165px;
+  height: 93px;
+  bottom: 35px;
+  left: 77px;
+}
+.scene0 .tree_1 {
+  top: 62px;
+  left: 4px;
+  width: 300px;
+  position: absolute;
+}
+.scene0 .tree_2 {
+  top: 20px;
+  left: 200px;
+  width: 300px;
+  position: absolute;
+}
+.scene0 .t1_01 {
+  background-image: url(sprites.png);
+  background-position: -984px -135px;
+  width: 5px;
+  height: 3px;
+  position: absolute;
+  top: 100px;
+  left: 60px;
+  transform-origin: center;
+}
+.scene0 .t1_02 {
+  background-image: url(sprites.png);
+  background-position: -993px -143px;
+  width: 4px;
+  height: 3px;
+  position: absolute;
+  top: 90px;
+  left: 65px;
+  transform-origin: center;
+}
+.scene0 .t1_03 {
+  background-image: url(sprites.png);
+  background-position: -844px -173px;
+  width: 4px;
+  height: 2px;
+  position: absolute;
+  top: 87px;
+  left: 60px;
+  transform-origin: center;
+}
+.scene0 .t1_04 {
+  background-image: url(sprites.png);
+  background-position: -984px -143px;
+  width: 4px;
+  height: 3px;
+  position: absolute;
+  top: 110px;
+  left: 65px;
+  transform-origin: center;
+}
+.scene0 .t1_05 {
+  background-image: url(sprites.png);
+  background-position: -992px -159px;
+  width: 4px;
+  height: 2px;
+  position: absolute;
+  top: 114px;
+  left: 60px;
+  transform-origin: center;
+}
+.scene0 .t1_06 {
+  background-image: url(sprites.png);
+  background-position: -994px -135px;
+  width: 4px;
+  height: 3px;
+  position: absolute;
+  top: 106px;
+  left: 56px;
+  transform-origin: center;
+}
+.scene0 .t1_07 {
+  background-image: url(sprites.png);
+  background-position: -984px -151px;
+  width: 4px;
+  height: 3px;
+  position: absolute;
+  top: 120px;
+  left: 60px;
+  transform-origin: center;
+}
+.scene0 .t1_08 {
+  background-image: url(sprites.png);
+  background-position: -853px -173px;
+  width: 3px;
+  height: 2px;
+  position: absolute;
+  top: 92px;
+  left: 50px;
+  transform-origin: center;
+}
+.scene0 .t1_09 {
+  background-image: url(sprites.png);
+  background-position: -984px -159px;
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  top: 125px;
+  left: 54px;
+  transform-origin: center;
+}
+.scene0 .t1_10 {
+  background-image: url(sprites.png);
+  background-position: -807px -181px;
+  width: 2px;
+  height: 3px;
+  position: absolute;
+  top: 100px;
+  left: 40px;
+  transform-origin: center;
+}
+.scene0 .t1_11 {
+  background-image: url(sprites.png);
+  background-position: -993px -151px;
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  top: 94px;
+  left: 56px;
+  transform-origin: center;
+}
+
+.scene1 .cover {
+  background-color: #da1710;
+  width: 300px;
+  height: 250px;
+}
+.scene1 .purple_stripe {
+  width: 12px;
+  height: 250px;
+  background-color: #9719d7;
+}
+.scene1 .logo_w {
+  background-image: url(sprites.png);
+  background-position: -862px -208px;
+  width: 50px;
+  height: 20px;
+  top: 20px;
+  left: 30px;
+}
+.scene1 .copy_1 {
+  background-image: url(sprites.png);
+  background-position: -651px -208px;
+  width: 206px;
+  height: 39px;
+  top: 65px;
+  left: 30px;
+}
+.scene1 .copy_2 {
+  background-image: url(sprites.png);
+  background-position: -475px -261px;
+  width: 211px;
+  height: 29px;
+  top: 115px;
+  left: 30px;
+}
+.scene1 .cta {
+  background-image: url(sprites.png);
+  background-position: -844px -135px;
+  width: 135px;
+  height: 33px;
+  top: 160px;
+  left: 30px;
+}
+.scene1 .tandc {
+  background-image: url(sprites.png);
+  background-position: -610px -135px;
+  width: 229px;
+  height: 41px;
+  left: 30px;
+  bottom: 5px;
+}
+
+.chopper {
+  position: absolute;
+  top: -600px;
+  left: -850px;
+  z-index: 1;
+}
+
+/*# sourceMappingURL=styles.css.map */

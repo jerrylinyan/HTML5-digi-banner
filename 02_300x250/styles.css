@@ -1,0 +1,260 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.exit {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+#banner {
+  width: 300px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+
+[class^=scene] {
+  display: none;
+  width: 300px;
+  height: 250px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+[class^=scene] > div, [class^=scene] > img {
+  position: absolute;
+}
+
+.bg {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  left: 0;
+  top: 0;
+  z-index: -100;
+}
+
+.scene99 {
+  display: block;
+}
+.scene99 .purple-swiper {
+  width: 15px;
+  height: 250px;
+  position: absolute;
+  background: #991ad6;
+}
+.scene99 .r-logo {
+  background-image: url(sprites.png);
+  background-position: -649px -300px;
+  width: 37px;
+  height: 16px;
+  top: 15px;
+  left: 28px;
+}
+.scene99 .reno {
+  background-image: url(sprites.png);
+  background-position: -376px -510px;
+  width: 79px;
+  height: 33px;
+  top: 50px;
+  left: 28px;
+}
+.scene99 .time {
+  background-image: url(sprites.png);
+  background-position: -276px -510px;
+  width: 95px;
+  height: 34px;
+  top: 87px;
+  left: 28px;
+}
+
+.scene0 {
+  background-color: #da1710;
+}
+.scene0 .background {
+  background-image: url(sprites.png);
+  background-position: 0px 0px;
+  width: 700px;
+  height: 250px;
+}
+.scene0 .right-arm {
+  background-image: url(sprites.png);
+  background-position: -649px -255px;
+  width: 41px;
+  height: 40px;
+  top: 61px;
+  left: 139px;
+  transform: rotate(70deg);
+  transform-origin: bottom left;
+}
+.scene0 .measuring-tape {
+  background-image: url(sprites.png);
+  background-position: -705px 0px;
+  width: 17px;
+  height: 122px;
+  top: 75px;
+  left: 174px;
+  transform-origin: bottom right;
+  transform: rotate(3deg);
+}
+.scene0 .mask {
+  background-image: url(sprites.png);
+  background-position: -705px -127px;
+  width: 15px;
+  height: 45px;
+  left: 173px;
+  top: 75px;
+  transform-origin: bottom right;
+  transform: rotate(-4deg);
+}
+.scene0 .carpet-wrapper {
+  top: 250px;
+  left: 343px;
+  position: relative;
+}
+.scene0 .carpet-wrapper .sweden-the-deal {
+  background-image: url(sprites.png);
+  background-position: -441px -255px;
+  width: 203px;
+  height: 82px;
+  position: absolute;
+  left: 115px;
+  top: 45px;
+}
+.scene0 .carpet-wrapper .seat {
+  background-image: url(sprites.png);
+  background-position: 0px -423px;
+  width: 271px;
+  height: 237px;
+  top: -223px;
+  left: 80px;
+  position: absolute;
+}
+.scene0 .carpet-wrapper .carpet {
+  background-image: url(sprites.png);
+  background-position: 0px -255px;
+  width: 436px;
+  height: 163px;
+  transform: scale(1.25);
+  position: absolute;
+}
+.scene0 .carpet-wrapper .carpet-roll {
+  background-image: url(sprites.png);
+  background-position: 0px -665px;
+  width: 448px;
+  height: 34px;
+  transform-origin: bottom;
+  transform: scaleX(0.64);
+  position: absolute;
+  top: 10px;
+  left: -10px;
+}
+.scene0 .carpet-wrapper .red-bg {
+  background-color: #da1710;
+  height: 130px;
+  width: 100%;
+  position: absolute;
+  top: 44px;
+  left: 65px;
+}
+.scene0 .carpet-wrapper .cat-arm {
+  background-image: url(sprites.png);
+  background-position: -705px -177px;
+  width: 11px;
+  height: 23px;
+  top: -60px;
+  left: 181px;
+  position: absolute;
+  transform-origin: top;
+}
+
+.scene2-cover {
+  background-color: #da1710;
+}
+
+.scene2 .w-logo {
+  background-image: url(sprites.png);
+  background-position: -649px -321px;
+  width: 37px;
+  height: 16px;
+  top: 15px;
+  left: 28px;
+  z-index: 1;
+}
+.scene2 .egift-card {
+  background-image: url(sprites.png);
+  background-position: -441px -342px;
+  width: 251px;
+  height: 59px;
+  top: 60px;
+  left: 28px;
+}
+.scene2 .tandc {
+  background-image: url(sprites.png);
+  background-position: -441px -406px;
+  width: 193px;
+  height: 9px;
+  left: 28px;
+  top: 140px;
+}
+.scene2 .findoutmore {
+  background-image: url(sprites.png);
+  background-position: -276px -473px;
+  width: 125px;
+  height: 32px;
+  left: 28px;
+  top: 174px;
+}
+
+.chopper {
+  left: -760px;
+  top: -415px;
+  width: 1920px;
+  height: 1080px;
+  position: absolute;
+}
+
+/*# sourceMappingURL=styles.css.map */

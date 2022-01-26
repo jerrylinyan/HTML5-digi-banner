@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <meta name="ad.size" content="width=300,height=250">
+    <title>Banner</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript">
+      var clickTag = 'https://www.google.com.au';
+    </script>
+</head>
+
+<body>
+  <a href="javascript:window.open(window.clickTag)">
+    <div id="banner"></div>
+  </a>
+
+<script id="template" type="text/template">
+  <div class="scene0">
+    <div class="purple_stripe"></div>
+    <div class="logo_w"></div>
+    <div class="copy_1"></div>
+    <div class="copy_2"></div>
+    <div class="machine">
+      <div class="money">
+        <div class="coin_04"></div>
+        <div class="coin_06"></div>
+        <div class="coin_07"></div>
+        <div class="coin_09"></div>
+        <div class="note_02"></div>
+        <div class="note_07"></div>
+        <div class="note_09"></div>
+        <div class="note_12"></div>
+        <div class="note_13"></div>
+        <div class="note_14"></div>
+        <div class="note_15"></div>
+      </div>
+      <div class="eftpos"></div>
+    </div>
+  </div>
+
+  <div class="scene1">
+    <div class="cover"></div>
+    <div class="purple_stripe"></div>
+    <div class="logo_w"></div>
+    <div class="copy_3"></div>
+    <div class="cta"></div>
+  </div>
+
+  <div class="chopper">
+    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="2002.5" height="2002.5" viewBox="0 0 2002.5 2002.5"> 
+        <defs>
+          <mask id="maskR1">
+            <circle id="pie1" cx="1001.25" cy="1001.25" r="1000" style="stroke: #ffffff;stroke-miterlimit: 10;stroke-width: 2000px"/>
+          </mask>  
+          <mask id="maskP1">
+            <circle id="pie2" cx="1001.25" cy="1001.25" r="1000" style="stroke: #ffffff;stroke-miterlimit: 10;stroke-width: 2000px"/>
+          </mask>
+          <mask id="maskP2">
+            <circle id="pie3" cx="1001.25" cy="1001.25" r="1000" style="stroke: #ffffff;stroke-miterlimit: 10;stroke-width: 2000px"/>
+          </mask>
+        </defs>
+          
+        <!-- this is the fixed color background with white as the fill, but the stroke changes -->
+        <!-- <rect id="bgFixed" x="1" y="1" width="118" height="28" rx="4" fill="#534891" stroke="#fff" stroke-width="1.5"/> -->
+
+        <!-- this text color changes based on the chosen color switch-->
+        <!-- <g id="logoColor" fill="#ffffff">
+            <path d="M124.75,152.5l-17-52.25c-2.25-8-6.5-10.25-12.5-10.25H63.75c2.5,1,4,7.25,4,7.25L83,149.75c1.75,6.5,7.25,10,13.5,10h33.25c-2.5-.25-5-7.25-5-7.25" transform="translate(351.25 159.59)" style="fill: #fff"/>
+            <path d="M175.25,152.5l17-52.25c2.25-8,6.5-10.25,12.5-10.25h31.5c-2.5,1-4,7.25-4,7.25L217,149.75c-1.75,6.5-7.25,10-13.5,10H170.25c2.5-.25,5-7.25,5-7.25" transform="translate(351.25 159.59)" style="fill: #fff"/>
+            <rect x="482.5" y="249.59" width="37.5" height="70" style="fill: #fff"/>
+        </g> -->
+    
+        <g mask="url(#maskR1)">
+            <circle id="pieChange1" cx="1001.25" cy="1001.25" r="1000" style="stroke: #990000;stroke-miterlimit: 10;stroke-width: 2000px"/>
+        </g>
+
+        <g mask="url(#maskP1)">                
+            <circle id="pieChange2" cx="1001.25" cy="1001.25" r="1000" style="stroke: #ff1fdd;stroke-miterlimit: 10;stroke-width: 2000px"/>
+            <g id="logoChange2">
+              <path d="M920.51,749.28c9,0,14.86,3.26,18.34,14.85h0L963.35,840s3.79,10.11,7.25,10.73H922.36c-9,0-16.91-5-19.44-14.6h0l-22-76.19s-2.37-9.2-6-10.65h45.51Zm204.49,0c-3.58,1.45-6,10.65-6,10.65l-22,76.19c-2.54,9.56-10.46,14.6-19.44,14.6H1029.4c3.45-.62,7.24-10.73,7.24-10.73l24.52-75.86c3.46-11.59,9.34-14.85,18.32-14.85Zm-97.83,0V850.72H972.83V749.28Z" transform="translate(1.25 -70)" style="fill: #da1710;fill-rule: evenodd"/>
+            </g>
+        </g>
+        <g mask="url(#maskP2)">                
+            <circle id="pieChange3" cx="1001.25" cy="1001.25" r="1000" style="stroke: #991ad6;stroke-miterlimit: 10;stroke-width: 2000px"/>
+            <g id="logoChange3">
+              <path d="M920.51,749.28c9,0,14.86,3.26,18.34,14.85h0L963.35,840s3.79,10.11,7.25,10.73H922.36c-9,0-16.91-5-19.44-14.6h0l-22-76.19s-2.37-9.2-6-10.65h45.51Zm204.49,0c-3.58,1.45-6,10.65-6,10.65l-22,76.19c-2.54,9.56-10.46,14.6-19.44,14.6H1029.4c3.45-.62,7.24-10.73,7.24-10.73l24.52-75.86c3.46-11.59,9.34-14.85,18.32-14.85Zm-97.83,0V850.72H972.83V749.28Z" transform="translate(1.25 -70)" style="fill: #da1710;fill-rule: evenodd"/>
+            </g>
+        </g>
+    </svg>
+  </div>
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.1.6/zepto.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="DrawSVGPlugin.min.js"></script>
+<script src="default.js"></script>
+</body>
+</html>

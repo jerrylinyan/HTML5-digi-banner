@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.hide {
+  display: none;
+}
+
+#banner {
+  width: 300px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+
+[class^=scene] {
+  display: none;
+  width: 300px;
+  height: 250px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+[class^=scene] > div, [class^=scene] > img {
+  position: absolute;
+}
+
+.scene0 {
+  background-color: #ffd9f7;
+}
+.scene0 .logo {
+  background-image: url(sprites.png);
+  background-position: -387px -105px;
+  width: 50px;
+  height: 20px;
+  top: 20px;
+  left: 30px;
+}
+.scene0 .red_stripe {
+  width: 11px;
+  height: 250px;
+  position: absolute;
+  background: #da1710;
+}
+.scene0 .title_1 {
+  background-image: url(sprites.png);
+  background-position: -305px 0px;
+  width: 187px;
+  height: 44px;
+  top: 52px;
+  left: 62px;
+  transform-origin: center;
+}
+.scene0 .title_2 {
+  background-image: url(sprites.png);
+  background-position: -305px -105px;
+  width: 77px;
+  height: 20px;
+  top: 75px;
+  left: 162px;
+  transform-origin: center;
+}
+.scene0 .clouds {
+  background-image: url(sprites.png);
+  background-position: 0px 0px;
+  width: 300px;
+  height: 197px;
+  top: 0;
+  left: 0;
+}
+.scene0 .lightning_1 {
+  background-image: url(sprites.png);
+  background-position: -333px -130px;
+  width: 20px;
+  height: 39px;
+  top: 110px;
+  left: 90px;
+}
+.scene0 .lightning_2 {
+  background-image: url(sprites.png);
+  background-position: -305px -130px;
+  width: 23px;
+  height: 54px;
+  top: 130px;
+  right: 33px;
+}
+.scene0 .house {
+  background-image: url(sprites.png);
+  background-position: 0px -202px;
+  width: 156px;
+  height: 90px;
+  left: 80px;
+  bottom: 8px;
+}
+.scene0 .water {
+  bottom: -91px;
+  right: 153px;
+  position: absolute;
+  z-index: 0;
+  width: 300px;
+}
+.scene0 #wave2 {
+  visibility: hidden;
+}
+
+.scene1 .cover {
+  background-color: #da1710;
+  width: 300px;
+  height: 250px;
+}
+.scene1 .purple_stripe {
+  width: 12px;
+  height: 250px;
+  background-color: #9719d7;
+}
+.scene1 .logo {
+  background-image: url(sprites.png);
+  background-position: -387px -105px;
+  width: 50px;
+  height: 20px;
+  top: 20px;
+  left: 30px;
+}
+.scene1 .copy_1 {
+  background-image: url(sprites.png);
+  background-position: 0px -297px;
+  width: 206px;
+  height: 39px;
+  top: 65px;
+  left: 30px;
+}
+.scene1 .copy_2 {
+  background-image: url(sprites.png);
+  background-position: -305px -87px;
+  width: 160px;
+  height: 13px;
+  top: 115px;
+  left: 30px;
+}
+.scene1 .cta {
+  background-image: url(sprites.png);
+  background-position: -305px -49px;
+  width: 135px;
+  height: 33px;
+  top: 160px;
+  left: 30px;
+}
+.scene1 .tandc {
+  background-image: url(sprites.png);
+  background-position: -211px -297px;
+  width: 220px;
+  height: 31px;
+  left: 30px;
+  bottom: 10px;
+}
+
+.chopper {
+  position: absolute;
+  top: -600px;
+  left: -850px;
+}
+
+/*# sourceMappingURL=styles.css.map */
